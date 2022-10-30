@@ -7,12 +7,20 @@ use std::cmp::Ordering;
 
 
 fn main() {
-    some_loops();
+    some_tuples();
+    //some_loops();
     //some_types();
     //greetings();
     // strings();
 }
 
+
+
+fn some_tuples() {
+    let my_tuple: (u8, String, f64) = (128, "A Secret Message".to_string(), 100_000.00);
+    println!("what's in the bottle? {}", my_tuple.1);
+    let (v1, v2, v3) = my_tuple;
+}
 
 fn some_loops() {
     let numbers = [1,2,3,4,5,6,7,8,9];
